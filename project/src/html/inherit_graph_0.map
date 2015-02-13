@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classAstTestSuite.html" title="AstTestSuite" alt="" coords="148,5,247,32"/>
+<area shape="rect" id="node3" href="$classParserTestSuite.html" title="ParserTestSuite" alt="" coords="139,56,255,83"/>
+<area shape="rect" id="node4" href="$classRegexTestSuite.html" title="RegexTestSuite" alt="" coords="139,107,255,133"/>
+<area shape="rect" id="node5" href="$classScannerTestSuite.html" title="ScannerTestSuite" alt="" coords="134,157,261,184"/>
+</map>

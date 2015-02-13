@@ -1,0 +1,93 @@
+\hypertarget{classBinOpExpr}{\section{Bin\-Op\-Expr Class Reference}
+\label{classBinOpExpr}\index{Bin\-Op\-Expr@{Bin\-Op\-Expr}}
+}
+
+
+Represents two expressions separated by an operation. \par
+  
+
+
+
+
+{\ttfamily \#include $<$A\-S\-T.\-h$>$}
+
+
+
+Inheritance diagram for Bin\-Op\-Expr\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classBinOpExpr__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Bin\-Op\-Expr\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{classBinOpExpr__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classBinOpExpr_a1f1e3308250be423314a06f916a653c5}{Bin\-Op\-Expr} (\hyperlink{classExpr}{Expr} $\ast$L, std\-::string op, \hyperlink{classExpr}{Expr} $\ast$R)
+\item 
+std\-::string \hyperlink{classBinOpExpr_a1ec35159c20a6b8481ee89ae5829c14d}{unparse} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the code modeled by this class and all its variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents two expressions separated by an operation. \par
+ 
+
+Model\-: \hyperlink{classExpr}{Expr} \-:\-:= \hyperlink{classExpr}{Expr} {\itshape op} \hyperlink{classExpr}{Expr} \par
+ Example\-: 1 + 1 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classBinOpExpr_a1f1e3308250be423314a06f916a653c5}{\index{Bin\-Op\-Expr@{Bin\-Op\-Expr}!Bin\-Op\-Expr@{Bin\-Op\-Expr}}
+\index{Bin\-Op\-Expr@{Bin\-Op\-Expr}!BinOpExpr@{Bin\-Op\-Expr}}
+\subsubsection[{Bin\-Op\-Expr}]{\setlength{\rightskip}{0pt plus 5cm}Bin\-Op\-Expr\-::\-Bin\-Op\-Expr (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr} $\ast$}]{L, }
+\item[{std\-::string}]{op, }
+\item[{{\bf Expr} $\ast$}]{R}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classBinOpExpr_a1f1e3308250be423314a06f916a653c5}
+Public constructor. 
+\begin{DoxyParams}{Parameters}
+{\em L} & -\/ Expression on left-\/hand side of operation \\
+\hline
+{\em op} & -\/ Operation splitting the left and right expressions \\
+\hline
+{\em R} & -\/ Expression on right-\/hand side of operation \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classBinOpExpr_a1ec35159c20a6b8481ee89ae5829c14d}{\index{Bin\-Op\-Expr@{Bin\-Op\-Expr}!unparse@{unparse}}
+\index{unparse@{unparse}!BinOpExpr@{Bin\-Op\-Expr}}
+\subsubsection[{unparse}]{\setlength{\rightskip}{0pt plus 5cm}string Bin\-Op\-Expr\-::unparse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classBinOpExpr_a1ec35159c20a6b8481ee89ae5829c14d}
+
+
+Returns a string representation of the code modeled by this class and all its variables. 
+
+\begin{DoxyReturn}{Returns}
+std\-::string. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classNode_a60ea533e0900961c05e701db70097136}{Node}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{AST_8h}{A\-S\-T.\-h}\item 
+\hyperlink{AST_8cpp}{A\-S\-T.\-cpp}\end{DoxyCompactItemize}

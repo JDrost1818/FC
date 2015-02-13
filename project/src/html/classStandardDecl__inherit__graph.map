@@ -1,0 +1,4 @@
+<map id="StandardDecl" name="StandardDecl">
+<area shape="rect" id="node2" href="$classStmt.html" title="Parent for all statment instances to be parsed &#160;&#160;" alt="" coords="40,160,91,237"/>
+<area shape="rect" id="node3" href="$classNode.html" title="Abstract parent or grandparent for all classes in the Abstract Syntax Tree (AST) " alt="" coords="18,5,112,112"/>
+</map>

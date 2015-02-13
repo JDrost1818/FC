@@ -1,0 +1,100 @@
+\hypertarget{AST_8h}{\section{A\-S\-T.\-h File Reference}
+\label{AST_8h}\index{A\-S\-T.\-h@{A\-S\-T.\-h}}
+}
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include \char`\"{}scanner.\-h\char`\"{}}\\*
+Include dependency graph for A\-S\-T.\-h\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{AST_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{AST_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classNode}{Node}
+\begin{DoxyCompactList}\small\item\em Abstract parent or grandparent for all classes in the Abstract Syntax Tree (A\-S\-T) \end{DoxyCompactList}\item 
+class \hyperlink{classRoot}{Root}
+\begin{DoxyCompactList}\small\item\em Handles initial function declaration. \end{DoxyCompactList}\item 
+class \hyperlink{classStmts}{Stmts}
+\begin{DoxyCompactList}\small\item\em Parent for all statements to be parsed. \end{DoxyCompactList}\item 
+class \hyperlink{classEmptyStmts}{Empty\-Stmts}
+\begin{DoxyCompactList}\small\item\em Represents emptiness. \end{DoxyCompactList}\item 
+class \hyperlink{classStmtStmts}{Stmt\-Stmts}
+\begin{DoxyCompactList}\small\item\em This provides a gateway to stmt objects. Without this, there would only be \par
+ \hyperlink{classStmts}{Stmts} and no \hyperlink{classStmt}{Stmt} would be able to be parsed. \end{DoxyCompactList}\item 
+class \hyperlink{classStmt}{Stmt}
+\begin{DoxyCompactList}\small\item\em Parent for all statment instances to be parsed \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classStandardDecl}{Standard\-Decl}
+\begin{DoxyCompactList}\small\item\em Represents a declaration of a variable \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classMatrixAdvDecl}{Matrix\-Adv\-Decl}
+\begin{DoxyCompactList}\small\item\em Represents a declaration of a matrix with initial values. \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classMatrixDecl}{Matrix\-Decl}
+\begin{DoxyCompactList}\small\item\em Represents a standard declaration of a matrix. \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classStmtBlock}{Stmt\-Block}
+\begin{DoxyCompactList}\small\item\em Represents a stmt which contains a block of stmts. \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classIfStmt}{If\-Stmt}
+\begin{DoxyCompactList}\small\item\em Represents an if statement. \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classIfElseStmt}{If\-Else\-Stmt}
+\begin{DoxyCompactList}\small\item\em Represents an if-\/else statement. \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classStandardAssignStmt}{Standard\-Assign\-Stmt}
+\begin{DoxyCompactList}\small\item\em Represents a standard variable assignment. \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classMatrixAssignStmt}{Matrix\-Assign\-Stmt}
+\begin{DoxyCompactList}\small\item\em Represents a matrix assignment. \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classPrintStmt}{Print\-Stmt}
+\begin{DoxyCompactList}\small\item\em Represents a print statement. \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classForStmt}{For\-Stmt}
+\begin{DoxyCompactList}\small\item\em Represents a for-\/loop statement. \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classWhileStmt}{While\-Stmt}
+\begin{DoxyCompactList}\small\item\em Represents a while-\/loop statement. \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classExpr}{Expr}
+\begin{DoxyCompactList}\small\item\em Parent for all expression instances to be parsed \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classVarName}{Var\-Name}
+\begin{DoxyCompactList}\small\item\em Represents a variable name. \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classAnyConst}{Any\-Const}
+\begin{DoxyCompactList}\small\item\em Represents a constant -\/ of any type (string, int, float, etc...). \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classBinOpExpr}{Bin\-Op\-Expr}
+\begin{DoxyCompactList}\small\item\em Represents two expressions separated by an operation. \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classMatrixRefExpr}{Matrix\-Ref\-Expr}
+\begin{DoxyCompactList}\small\item\em Represents accessing a matrix. \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classFunctionCall}{Function\-Call}
+\begin{DoxyCompactList}\small\item\em Represents a function call. \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classParensExpr}{Parens\-Expr}
+\begin{DoxyCompactList}\small\item\em Represents an expression surrounded by parenthesis. \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classLetExpr}{Let\-Expr}
+\begin{DoxyCompactList}\small\item\em Represents a let expression. \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classIfExpr}{If\-Expr}
+\begin{DoxyCompactList}\small\item\em Represents if-\/then-\/else expression \par
+ \end{DoxyCompactList}\item 
+class \hyperlink{classNotExpr}{Not\-Expr}
+\begin{DoxyCompactList}\small\item\em Represents negation of a boolean \par
+ \end{DoxyCompactList}\end{DoxyCompactItemize}

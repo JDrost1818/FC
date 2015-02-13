@@ -1,0 +1,87 @@
+\hypertarget{classParensExpr}{\section{Parens\-Expr Class Reference}
+\label{classParensExpr}\index{Parens\-Expr@{Parens\-Expr}}
+}
+
+
+Represents an expression surrounded by parenthesis. \par
+  
+
+
+
+
+{\ttfamily \#include $<$A\-S\-T.\-h$>$}
+
+
+
+Inheritance diagram for Parens\-Expr\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classParensExpr__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Parens\-Expr\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classParensExpr__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classParensExpr_a1f690170bb62040a48c38df1aef7a453}{Parens\-Expr} (\hyperlink{classExpr}{Expr} $\ast$e)
+\item 
+std\-::string \hyperlink{classParensExpr_ad8eabc69cf42ce3ee92d88caeb40134a}{unparse} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the code modeled by this class and all its variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents an expression surrounded by parenthesis. \par
+ 
+
+Model\-: \hyperlink{classExpr}{Expr} \-:\-:= '(' \hyperlink{classExpr}{Expr} ')' \par
+ Example\-: (1 + 1) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classParensExpr_a1f690170bb62040a48c38df1aef7a453}{\index{Parens\-Expr@{Parens\-Expr}!Parens\-Expr@{Parens\-Expr}}
+\index{Parens\-Expr@{Parens\-Expr}!ParensExpr@{Parens\-Expr}}
+\subsubsection[{Parens\-Expr}]{\setlength{\rightskip}{0pt plus 5cm}Parens\-Expr\-::\-Parens\-Expr (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classParensExpr_a1f690170bb62040a48c38df1aef7a453}
+Public constructor. 
+\begin{DoxyParams}{Parameters}
+{\em e} & -\/ Expression evaluated inside the parenthesis \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classParensExpr_ad8eabc69cf42ce3ee92d88caeb40134a}{\index{Parens\-Expr@{Parens\-Expr}!unparse@{unparse}}
+\index{unparse@{unparse}!ParensExpr@{Parens\-Expr}}
+\subsubsection[{unparse}]{\setlength{\rightskip}{0pt plus 5cm}string Parens\-Expr\-::unparse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classParensExpr_ad8eabc69cf42ce3ee92d88caeb40134a}
+
+
+Returns a string representation of the code modeled by this class and all its variables. 
+
+\begin{DoxyReturn}{Returns}
+std\-::string. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classNode_a60ea533e0900961c05e701db70097136}{Node}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{AST_8h}{A\-S\-T.\-h}\item 
+\hyperlink{AST_8cpp}{A\-S\-T.\-cpp}\end{DoxyCompactItemize}

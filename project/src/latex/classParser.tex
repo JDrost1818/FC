@@ -1,0 +1,677 @@
+\hypertarget{classParser}{\section{Parser Class Reference}
+\label{classParser}\index{Parser@{Parser}}
+}
+
+
+Organizes F\-C\-A\-L text into an tree.  
+
+
+
+
+{\ttfamily \#include $<$parser.\-h$>$}
+
+
+
+Collaboration diagram for Parser\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classParser__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classParser_a12234f6cd36b61af4b50c94a179422c1}{Parser} ()
+\begin{DoxyCompactList}\small\item\em Default constructor. Sets everything to N\-U\-L\-L. \end{DoxyCompactList}\item 
+\hyperlink{classParser_a3e658b5917a93a3ef648050d060e3a93}{$\sim$\-Parser} ()
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_a2c1a7aa0b09a43bc1eef460817efb1d6}{parse} (const char $\ast$text)
+\begin{DoxyCompactList}\small\item\em Parses the program. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_a14e25c84322809e2f060dc530362ea71}{parse\-Program} ()
+\begin{DoxyCompactList}\small\item\em Parses the program. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_ac646227983887c1cd13dae67fa1bc142}{parse\-Decl} ()
+\begin{DoxyCompactList}\small\item\em Parses declarations of variables. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_a1e1f83c0f4b11148a356d951f191425e}{parse\-Standard\-Decl} ()
+\begin{DoxyCompactList}\small\item\em Parses a standard declaration of a variable. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_a3a00df25fda2af308b69f05eed14ac69}{parse\-Matrix\-Decl} ()
+\begin{DoxyCompactList}\small\item\em Parses a Matrix Declaration. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_a452db3def31683cb0305e57a01489bd4}{parse\-Stmts} ()
+\begin{DoxyCompactList}\small\item\em Starting place to parse any type of \hyperlink{classStmts}{Stmts}. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_a9709c4793d0cce012d595f3ee416cd25}{parse\-Stmt} ()
+\begin{DoxyCompactList}\small\item\em Starting place to parse any type of \hyperlink{classStmt}{Stmt}. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_a50227dc24dc7a175ac0533d9957dfcf8}{parse\-Expr} (int rbp)
+\begin{DoxyCompactList}\small\item\em Starting place to parse any type of \hyperlink{classExpr}{Expr}. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_ad40f1e5e4c66814f959d982f94b767a3}{parse\-True\-Kwd} ()
+\begin{DoxyCompactList}\small\item\em Parses the 'True' keyword. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_a56f03d2e70d12648c55ce56a11e63324}{parse\-False\-Kwd} ()
+\begin{DoxyCompactList}\small\item\em Parses the 'False' keyword. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_a2b200b744e5bedf82ef6f610d7877cfc}{parse\-Int\-Const} ()
+\begin{DoxyCompactList}\small\item\em Parses a constant of type Int. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_aaf7b1176fd53246f59577c7eec8b9d22}{parse\-Float\-Const} ()
+\begin{DoxyCompactList}\small\item\em Parses a constant of type Float. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_a4d8930d45c2b730912154c46cc54833c}{parse\-String\-Const} ()
+\begin{DoxyCompactList}\small\item\em Parses a constant of type string. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_a49c9b3d31ca060c97873e5485d518da3}{parse\-Char\-Const} ()
+\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_a8c1baf62f71da64590e883e51ce622ca}{parse\-Variable\-Name} ()
+\begin{DoxyCompactList}\small\item\em Parses a variable name use. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_aec4c38e1e63c9becfd3a8fc4a1a73f01}{parse\-Nested\-Expr} ()
+\begin{DoxyCompactList}\small\item\em Parses a nested expression. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_a1503ceff46112d6d4f0e01b5fb77afcd}{parse\-Not\-Expr} ()
+\begin{DoxyCompactList}\small\item\em Parses the negation of a boolen expression. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_aa24c33b04779801b330d7fe5a74349e5}{parse\-Let\-Expr} ()
+\begin{DoxyCompactList}\small\item\em Parses let expression. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_a555bc6f671d408208e6d049f8e9f3c86}{parse\-If\-Expr} ()
+\begin{DoxyCompactList}\small\item\em Parses if-\/then-\/else expression. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_ae09cb2b5a7f80c6ad4ad9ccf27a746ca}{parse\-Addition} (\hyperlink{classParseResult}{Parse\-Result} left)
+\begin{DoxyCompactList}\small\item\em Parses an addition operation of two expressions. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_a52e6a57d53fc98e5819cc51b3cbe5bd5}{parse\-Multiplication} (\hyperlink{classParseResult}{Parse\-Result} left)
+\begin{DoxyCompactList}\small\item\em Parses a multiplication operation of two expressions. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_ac22cf1f77e0ca4c23942d5cbcc47eb37}{parse\-Subtraction} (\hyperlink{classParseResult}{Parse\-Result} left)
+\begin{DoxyCompactList}\small\item\em Parses a substraction operation of two expressions. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_ad05e6cd1bf83179ecb727b83cbbd0c4e}{parse\-Division} (\hyperlink{classParseResult}{Parse\-Result} left)
+\begin{DoxyCompactList}\small\item\em Parses a division operation of two expressions. \end{DoxyCompactList}\item 
+\hyperlink{classParseResult}{Parse\-Result} \hyperlink{classParser_ab42ecabc4dbe601d5ed9667351c0c0b8}{parse\-Relational\-Expr} (\hyperlink{classParseResult}{Parse\-Result} left)
+\begin{DoxyCompactList}\small\item\em Parses two expressions being related to one another. \end{DoxyCompactList}\item 
+void \hyperlink{classParser_a3199aab5275c8b6477245eb866fabf35}{match} (\hyperlink{scanner_8h_ab7f9b765cab7ed98e5a7f05690f6a061}{token\-Type} tt)
+\begin{DoxyCompactList}\small\item\em Matches next token. \end{DoxyCompactList}\item 
+bool \hyperlink{classParser_a151ffb920a67527813d77bc4ba44c4a7}{attempt\-Match} (\hyperlink{scanner_8h_ab7f9b765cab7ed98e5a7f05690f6a061}{token\-Type} tt)
+\begin{DoxyCompactList}\small\item\em Attempts to match next token. \end{DoxyCompactList}\item 
+bool \hyperlink{classParser_a67a10b685bd263477b5f59f1923cdec3}{next\-Is} (\hyperlink{scanner_8h_ab7f9b765cab7ed98e5a7f05690f6a061}{token\-Type} tt)
+\begin{DoxyCompactList}\small\item\em Determines if next token is of a certain type. \end{DoxyCompactList}\item 
+void \hyperlink{classParser_a324a5bb61c9dfc645300a92aecd6fe69}{next\-Token} ()
+\begin{DoxyCompactList}\small\item\em Moves to next token in linked-\/list. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classParser_a1f45059a13bc0c98355278a9ca9feed9}{terminal\-Description} (\hyperlink{scanner_8h_ab7f9b765cab7ed98e5a7f05690f6a061}{token\-Type} terminal)
+\begin{DoxyCompactList}\small\item\em Retrieves the description for a token\-Type. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classParser_a341bee73e8b1e8558505a237846b16b3}{make\-Error\-Msg} (\hyperlink{scanner_8h_ab7f9b765cab7ed98e5a7f05690f6a061}{token\-Type} terminal)
+\begin{DoxyCompactList}\small\item\em Makes error message based on token\-Type. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classParser_ad38e58ddee85db2aecbd3c7bdcf42116}{make\-Error\-Msg\-Expected} (\hyperlink{scanner_8h_ab7f9b765cab7ed98e5a7f05690f6a061}{token\-Type} terminal)
+\begin{DoxyCompactList}\small\item\em Creates an expected error message. \end{DoxyCompactList}\item 
+std\-::string \hyperlink{classParser_a60c23daeffb7ced92599e4f2555f71c9}{make\-Error\-Msg} (const char $\ast$msg)
+\begin{DoxyCompactList}\small\item\em Makes programmer-\/defined error message. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classExtToken}{Ext\-Token} $\ast$ \hyperlink{classParser_a3606ff327be18af7f76df95f50851633}{tokens}
+\item 
+\hyperlink{classExtToken}{Ext\-Token} $\ast$ \hyperlink{classParser_a75ab2e2b9385c14e5f967f873340ed11}{curr\-Token}
+\item 
+\hyperlink{classExtToken}{Ext\-Token} $\ast$ \hyperlink{classParser_a4bcf7560a5ea1b486bbe4bb54a5a22eb}{prev\-Token}
+\item 
+\hyperlink{classToken}{Token} $\ast$ \hyperlink{classParser_a0910de176dcc1cdfbf7ad99622ce9dd5}{stokens}
+\item 
+\hyperlink{classScanner}{Scanner} $\ast$ \hyperlink{classParser_ab2ef99ea9e732f5fd176b3949a6c32af}{s}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Organizes F\-C\-A\-L text into an tree. 
+
+\hyperlink{classParser}{Parser} is a collection of methods headlined by \hyperlink{classParser_a2c1a7aa0b09a43bc1eef460817efb1d6}{Parser\-::parse} which takes in text. It then proceeds to march through the text and determines the syntax of the code, while creating a tree. It is heavily tied to A\-St.\-h and \hyperlink{AST_8cpp}{A\-S\-T.\-cpp} in that it uses classes defined in those files to create the structure of the tree. After creating the tree, it can easily be traversed by way of executing methods for each \hyperlink{classNode}{Node} -\/ ie the classes declard in \hyperlink{AST_8h}{A\-S\-T.\-h}.
+
+Though it cannot do it on it's own, when paired with a grammar, this can translate code from one language to another. In its current form, it is setup to translate F\-C\-A\-L code into C++ code. Heavy modifications would be needed to alter the two languages. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classParser_a12234f6cd36b61af4b50c94a179422c1}{\index{Parser@{Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!Parser@{Parser}}
+\subsubsection[{Parser}]{\setlength{\rightskip}{0pt plus 5cm}Parser\-::\-Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_a12234f6cd36b61af4b50c94a179422c1}
+
+
+Default constructor. Sets everything to N\-U\-L\-L. 
+
+\hypertarget{classParser_a3e658b5917a93a3ef648050d060e3a93}{\index{Parser@{Parser}!$\sim$\-Parser@{$\sim$\-Parser}}
+\index{$\sim$\-Parser@{$\sim$\-Parser}!Parser@{Parser}}
+\subsubsection[{$\sim$\-Parser}]{\setlength{\rightskip}{0pt plus 5cm}Parser\-::$\sim$\-Parser (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_a3e658b5917a93a3ef648050d060e3a93}
+
+
+Default destructor. 
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classParser_a151ffb920a67527813d77bc4ba44c4a7}{\index{Parser@{Parser}!attempt\-Match@{attempt\-Match}}
+\index{attempt\-Match@{attempt\-Match}!Parser@{Parser}}
+\subsubsection[{attempt\-Match}]{\setlength{\rightskip}{0pt plus 5cm}bool Parser\-::attempt\-Match (
+\begin{DoxyParamCaption}
+\item[{{\bf token\-Type}}]{tt}
+\end{DoxyParamCaption}
+)}}\label{classParser_a151ffb920a67527813d77bc4ba44c4a7}
+
+
+Attempts to match next token. 
+
+Used to check if the next token equals something, For example, checking whether there is an 'else' in an if-\/statement or not.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tt} & Type next token might match \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classParser_a341bee73e8b1e8558505a237846b16b3}{\index{Parser@{Parser}!make\-Error\-Msg@{make\-Error\-Msg}}
+\index{make\-Error\-Msg@{make\-Error\-Msg}!Parser@{Parser}}
+\subsubsection[{make\-Error\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}string Parser\-::make\-Error\-Msg (
+\begin{DoxyParamCaption}
+\item[{{\bf token\-Type}}]{terminal}
+\end{DoxyParamCaption}
+)}}\label{classParser_a341bee73e8b1e8558505a237846b16b3}
+
+
+Makes error message based on token\-Type. 
+
+Used to show user that an unexpected symbol was found while parsing.
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminal} & Type next token might match \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classParser_a60c23daeffb7ced92599e4f2555f71c9}{\index{Parser@{Parser}!make\-Error\-Msg@{make\-Error\-Msg}}
+\index{make\-Error\-Msg@{make\-Error\-Msg}!Parser@{Parser}}
+\subsubsection[{make\-Error\-Msg}]{\setlength{\rightskip}{0pt plus 5cm}string Parser\-::make\-Error\-Msg (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{msg}
+\end{DoxyParamCaption}
+)}}\label{classParser_a60c23daeffb7ced92599e4f2555f71c9}
+
+
+Makes programmer-\/defined error message. 
+
+Based on text input, creates an error message that is that message.
+
+
+\begin{DoxyParams}{Parameters}
+{\em msg} & Error message \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classParser_ad38e58ddee85db2aecbd3c7bdcf42116}{\index{Parser@{Parser}!make\-Error\-Msg\-Expected@{make\-Error\-Msg\-Expected}}
+\index{make\-Error\-Msg\-Expected@{make\-Error\-Msg\-Expected}!Parser@{Parser}}
+\subsubsection[{make\-Error\-Msg\-Expected}]{\setlength{\rightskip}{0pt plus 5cm}string Parser\-::make\-Error\-Msg\-Expected (
+\begin{DoxyParamCaption}
+\item[{{\bf token\-Type}}]{terminal}
+\end{DoxyParamCaption}
+)}}\label{classParser_ad38e58ddee85db2aecbd3c7bdcf42116}
+
+
+Creates an expected error message. 
+
+Used to specify that the program expected a value, yet received something else. It then is able to show the user where the program is going wrong.
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminal} & Type expected \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+\hypertarget{classParser_a3199aab5275c8b6477245eb866fabf35}{\index{Parser@{Parser}!match@{match}}
+\index{match@{match}!Parser@{Parser}}
+\subsubsection[{match}]{\setlength{\rightskip}{0pt plus 5cm}void Parser\-::match (
+\begin{DoxyParamCaption}
+\item[{{\bf token\-Type}}]{tt}
+\end{DoxyParamCaption}
+)}}\label{classParser_a3199aab5275c8b6477245eb866fabf35}
+
+
+Matches next token. 
+
+Used when in order to be syntatically correct, the next token M\-U\-S\-T equal something. For example, there must be a '=' in an assignment. If the particular type is not found, an error is thrown
+
+
+\begin{DoxyParams}{Parameters}
+{\em tt} & Type that must be matched by next token \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classParser_a67a10b685bd263477b5f59f1923cdec3}{\index{Parser@{Parser}!next\-Is@{next\-Is}}
+\index{next\-Is@{next\-Is}!Parser@{Parser}}
+\subsubsection[{next\-Is}]{\setlength{\rightskip}{0pt plus 5cm}bool Parser\-::next\-Is (
+\begin{DoxyParamCaption}
+\item[{{\bf token\-Type}}]{tt}
+\end{DoxyParamCaption}
+)}}\label{classParser_a67a10b685bd263477b5f59f1923cdec3}
+
+
+Determines if next token is of a certain type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tt} & Type next token might match \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool 
+\end{DoxyReturn}
+\hypertarget{classParser_a324a5bb61c9dfc645300a92aecd6fe69}{\index{Parser@{Parser}!next\-Token@{next\-Token}}
+\index{next\-Token@{next\-Token}!Parser@{Parser}}
+\subsubsection[{next\-Token}]{\setlength{\rightskip}{0pt plus 5cm}void Parser\-::next\-Token (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_a324a5bb61c9dfc645300a92aecd6fe69}
+
+
+Moves to next token in linked-\/list. 
+
+Used to explicitly move to the next token without checking anything.
+
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{classParser_a2c1a7aa0b09a43bc1eef460817efb1d6}{\index{Parser@{Parser}!parse@{parse}}
+\index{parse@{parse}!Parser@{Parser}}
+\subsubsection[{parse}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)}}\label{classParser_a2c1a7aa0b09a43bc1eef460817efb1d6}
+
+
+Parses the program. 
+
+First creates a list of tokens that represent the input text. Second, it checks to make sure that the tokens, and therfore the program, is well-\/formed without any lexical errors. Third and final, creates a tree out of the tokens.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_ae09cb2b5a7f80c6ad4ad9ccf27a746ca}{\index{Parser@{Parser}!parse\-Addition@{parse\-Addition}}
+\index{parse\-Addition@{parse\-Addition}!Parser@{Parser}}
+\subsubsection[{parse\-Addition}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Addition (
+\begin{DoxyParamCaption}
+\item[{{\bf Parse\-Result}}]{pr\-Left}
+\end{DoxyParamCaption}
+)}}\label{classParser_ae09cb2b5a7f80c6ad4ad9ccf27a746ca}
+
+
+Parses an addition operation of two expressions. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_a49c9b3d31ca060c97873e5485d518da3}{\index{Parser@{Parser}!parse\-Char\-Const@{parse\-Char\-Const}}
+\index{parse\-Char\-Const@{parse\-Char\-Const}!Parser@{Parser}}
+\subsubsection[{parse\-Char\-Const}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Char\-Const (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_a49c9b3d31ca060c97873e5485d518da3}
+\hypertarget{classParser_ac646227983887c1cd13dae67fa1bc142}{\index{Parser@{Parser}!parse\-Decl@{parse\-Decl}}
+\index{parse\-Decl@{parse\-Decl}!Parser@{Parser}}
+\subsubsection[{parse\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Decl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_ac646227983887c1cd13dae67fa1bc142}
+
+
+Parses declarations of variables. 
+
+Finds the keyword -\/ ie int, float, matrix, etc -\/ and correctly passes responsibilities to the function tailored to handle the task. If it sees 'Matrix' it will call \hyperlink{classParser_a3a00df25fda2af308b69f05eed14ac69}{Parser\-::parse\-Matrix\-Decl}, else it will call \hyperlink{classParser_a1e1f83c0f4b11148a356d951f191425e}{Parser\-::parse\-Standard\-Decl}.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_ad05e6cd1bf83179ecb727b83cbbd0c4e}{\index{Parser@{Parser}!parse\-Division@{parse\-Division}}
+\index{parse\-Division@{parse\-Division}!Parser@{Parser}}
+\subsubsection[{parse\-Division}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Division (
+\begin{DoxyParamCaption}
+\item[{{\bf Parse\-Result}}]{pr\-Left}
+\end{DoxyParamCaption}
+)}}\label{classParser_ad05e6cd1bf83179ecb727b83cbbd0c4e}
+
+
+Parses a division operation of two expressions. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_a50227dc24dc7a175ac0533d9957dfcf8}{\index{Parser@{Parser}!parse\-Expr@{parse\-Expr}}
+\index{parse\-Expr@{parse\-Expr}!Parser@{Parser}}
+\subsubsection[{parse\-Expr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Expr (
+\begin{DoxyParamCaption}
+\item[{int}]{rbp}
+\end{DoxyParamCaption}
+)}}\label{classParser_a50227dc24dc7a175ac0533d9957dfcf8}
+
+
+Starting place to parse any type of \hyperlink{classExpr}{Expr}. 
+
+Based on context clues, determines which type of expression is next and pinpoints a function which is tailored to handle such a parse
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_a56f03d2e70d12648c55ce56a11e63324}{\index{Parser@{Parser}!parse\-False\-Kwd@{parse\-False\-Kwd}}
+\index{parse\-False\-Kwd@{parse\-False\-Kwd}!Parser@{Parser}}
+\subsubsection[{parse\-False\-Kwd}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-False\-Kwd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_a56f03d2e70d12648c55ce56a11e63324}
+
+
+Parses the 'False' keyword. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_aaf7b1176fd53246f59577c7eec8b9d22}{\index{Parser@{Parser}!parse\-Float\-Const@{parse\-Float\-Const}}
+\index{parse\-Float\-Const@{parse\-Float\-Const}!Parser@{Parser}}
+\subsubsection[{parse\-Float\-Const}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Float\-Const (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_aaf7b1176fd53246f59577c7eec8b9d22}
+
+
+Parses a constant of type Float. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_a555bc6f671d408208e6d049f8e9f3c86}{\index{Parser@{Parser}!parse\-If\-Expr@{parse\-If\-Expr}}
+\index{parse\-If\-Expr@{parse\-If\-Expr}!Parser@{Parser}}
+\subsubsection[{parse\-If\-Expr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-If\-Expr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_a555bc6f671d408208e6d049f8e9f3c86}
+
+
+Parses if-\/then-\/else expression. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_a2b200b744e5bedf82ef6f610d7877cfc}{\index{Parser@{Parser}!parse\-Int\-Const@{parse\-Int\-Const}}
+\index{parse\-Int\-Const@{parse\-Int\-Const}!Parser@{Parser}}
+\subsubsection[{parse\-Int\-Const}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Int\-Const (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_a2b200b744e5bedf82ef6f610d7877cfc}
+
+
+Parses a constant of type Int. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_aa24c33b04779801b330d7fe5a74349e5}{\index{Parser@{Parser}!parse\-Let\-Expr@{parse\-Let\-Expr}}
+\index{parse\-Let\-Expr@{parse\-Let\-Expr}!Parser@{Parser}}
+\subsubsection[{parse\-Let\-Expr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Let\-Expr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_aa24c33b04779801b330d7fe5a74349e5}
+
+
+Parses let expression. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_a3a00df25fda2af308b69f05eed14ac69}{\index{Parser@{Parser}!parse\-Matrix\-Decl@{parse\-Matrix\-Decl}}
+\index{parse\-Matrix\-Decl@{parse\-Matrix\-Decl}!Parser@{Parser}}
+\subsubsection[{parse\-Matrix\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Matrix\-Decl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_a3a00df25fda2af308b69f05eed14ac69}
+
+
+Parses a Matrix Declaration. 
+
+This serves the same purpose as a standard declaration parse, however, it is specifically tailored for matrices as they are a unique subset of declarations. It also is able to correctly determine which type of matrix declaration is being implemented and act accordingly.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_a52e6a57d53fc98e5819cc51b3cbe5bd5}{\index{Parser@{Parser}!parse\-Multiplication@{parse\-Multiplication}}
+\index{parse\-Multiplication@{parse\-Multiplication}!Parser@{Parser}}
+\subsubsection[{parse\-Multiplication}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Multiplication (
+\begin{DoxyParamCaption}
+\item[{{\bf Parse\-Result}}]{pr\-Left}
+\end{DoxyParamCaption}
+)}}\label{classParser_a52e6a57d53fc98e5819cc51b3cbe5bd5}
+
+
+Parses a multiplication operation of two expressions. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_aec4c38e1e63c9becfd3a8fc4a1a73f01}{\index{Parser@{Parser}!parse\-Nested\-Expr@{parse\-Nested\-Expr}}
+\index{parse\-Nested\-Expr@{parse\-Nested\-Expr}!Parser@{Parser}}
+\subsubsection[{parse\-Nested\-Expr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Nested\-Expr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_aec4c38e1e63c9becfd3a8fc4a1a73f01}
+
+
+Parses a nested expression. 
+
+Important for maintaining order of operations within the program. For example\-: (1 + 1) $\ast$ 2.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_a1503ceff46112d6d4f0e01b5fb77afcd}{\index{Parser@{Parser}!parse\-Not\-Expr@{parse\-Not\-Expr}}
+\index{parse\-Not\-Expr@{parse\-Not\-Expr}!Parser@{Parser}}
+\subsubsection[{parse\-Not\-Expr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Not\-Expr (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_a1503ceff46112d6d4f0e01b5fb77afcd}
+
+
+Parses the negation of a boolen expression. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_a14e25c84322809e2f060dc530362ea71}{\index{Parser@{Parser}!parse\-Program@{parse\-Program}}
+\index{parse\-Program@{parse\-Program}!Parser@{Parser}}
+\subsubsection[{parse\-Program}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Program (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_a14e25c84322809e2f060dc530362ea71}
+
+
+Parses the program. 
+
+This is the initial part of parsing. It is finds the name of the function being parsed and then proceeds to find all the subsequent statements held within the the body of the method.
+
+\begin{DoxySeeAlso}{See Also}
+\hyperlink{classRoot}{Root}
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_ab42ecabc4dbe601d5ed9667351c0c0b8}{\index{Parser@{Parser}!parse\-Relational\-Expr@{parse\-Relational\-Expr}}
+\index{parse\-Relational\-Expr@{parse\-Relational\-Expr}!Parser@{Parser}}
+\subsubsection[{parse\-Relational\-Expr}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Relational\-Expr (
+\begin{DoxyParamCaption}
+\item[{{\bf Parse\-Result}}]{pr\-Left}
+\end{DoxyParamCaption}
+)}}\label{classParser_ab42ecabc4dbe601d5ed9667351c0c0b8}
+
+
+Parses two expressions being related to one another. 
+
+This is most often used in if-\/statments and while-\/loops. Common examples include \char`\"{}\&\&\char`\"{}, \char`\"{}$>$\char`\"{}, \char`\"{}$<$=\char`\"{}, etc.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_a1e1f83c0f4b11148a356d951f191425e}{\index{Parser@{Parser}!parse\-Standard\-Decl@{parse\-Standard\-Decl}}
+\index{parse\-Standard\-Decl@{parse\-Standard\-Decl}!Parser@{Parser}}
+\subsubsection[{parse\-Standard\-Decl}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Standard\-Decl (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_a1e1f83c0f4b11148a356d951f191425e}
+
+
+Parses a standard declaration of a variable. 
+
+Finds the keyword -\/ ie int, float, etc -\/ and creates a node that accurately reflects the declaration happening.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_a9709c4793d0cce012d595f3ee416cd25}{\index{Parser@{Parser}!parse\-Stmt@{parse\-Stmt}}
+\index{parse\-Stmt@{parse\-Stmt}!Parser@{Parser}}
+\subsubsection[{parse\-Stmt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Stmt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_a9709c4793d0cce012d595f3ee416cd25}
+
+
+Starting place to parse any type of \hyperlink{classStmt}{Stmt}. 
+
+Based on context clues, determines which type of statement is next and pinpoints a function which is tailored to handle such a parse
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_a452db3def31683cb0305e57a01489bd4}{\index{Parser@{Parser}!parse\-Stmts@{parse\-Stmts}}
+\index{parse\-Stmts@{parse\-Stmts}!Parser@{Parser}}
+\subsubsection[{parse\-Stmts}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Stmts (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_a452db3def31683cb0305e57a01489bd4}
+
+
+Starting place to parse any type of \hyperlink{classStmts}{Stmts}. 
+
+Based on context clues, determines which type of statements is next and pinpoints a function which is tailored to handle such a parse.
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_a4d8930d45c2b730912154c46cc54833c}{\index{Parser@{Parser}!parse\-String\-Const@{parse\-String\-Const}}
+\index{parse\-String\-Const@{parse\-String\-Const}!Parser@{Parser}}
+\subsubsection[{parse\-String\-Const}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-String\-Const (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_a4d8930d45c2b730912154c46cc54833c}
+
+
+Parses a constant of type string. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_ac22cf1f77e0ca4c23942d5cbcc47eb37}{\index{Parser@{Parser}!parse\-Subtraction@{parse\-Subtraction}}
+\index{parse\-Subtraction@{parse\-Subtraction}!Parser@{Parser}}
+\subsubsection[{parse\-Subtraction}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Subtraction (
+\begin{DoxyParamCaption}
+\item[{{\bf Parse\-Result}}]{pr\-Left}
+\end{DoxyParamCaption}
+)}}\label{classParser_ac22cf1f77e0ca4c23942d5cbcc47eb37}
+
+
+Parses a substraction operation of two expressions. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_ad40f1e5e4c66814f959d982f94b767a3}{\index{Parser@{Parser}!parse\-True\-Kwd@{parse\-True\-Kwd}}
+\index{parse\-True\-Kwd@{parse\-True\-Kwd}!Parser@{Parser}}
+\subsubsection[{parse\-True\-Kwd}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-True\-Kwd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_ad40f1e5e4c66814f959d982f94b767a3}
+
+
+Parses the 'True' keyword. 
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_a8c1baf62f71da64590e883e51ce622ca}{\index{Parser@{Parser}!parse\-Variable\-Name@{parse\-Variable\-Name}}
+\index{parse\-Variable\-Name@{parse\-Variable\-Name}!Parser@{Parser}}
+\subsubsection[{parse\-Variable\-Name}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parse\-Result} Parser\-::parse\-Variable\-Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classParser_a8c1baf62f71da64590e883e51ce622ca}
+
+
+Parses a variable name use. 
+
+Determines whether indeed a variable is being referenced or if a program is being called and parses appropriately
+
+\begin{DoxyReturn}{Returns}
+\hyperlink{classParseResult}{Parse\-Result} 
+\end{DoxyReturn}
+\hypertarget{classParser_a1f45059a13bc0c98355278a9ca9feed9}{\index{Parser@{Parser}!terminal\-Description@{terminal\-Description}}
+\index{terminal\-Description@{terminal\-Description}!Parser@{Parser}}
+\subsubsection[{terminal\-Description}]{\setlength{\rightskip}{0pt plus 5cm}string Parser\-::terminal\-Description (
+\begin{DoxyParamCaption}
+\item[{{\bf token\-Type}}]{terminal}
+\end{DoxyParamCaption}
+)}}\label{classParser_a1f45059a13bc0c98355278a9ca9feed9}
+
+
+Retrieves the description for a token\-Type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em terminal} & token\-Type of which we want to know the description \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+string 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classParser_a75ab2e2b9385c14e5f967f873340ed11}{\index{Parser@{Parser}!curr\-Token@{curr\-Token}}
+\index{curr\-Token@{curr\-Token}!Parser@{Parser}}
+\subsubsection[{curr\-Token}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ext\-Token}$\ast$ Parser\-::curr\-Token}}\label{classParser_a75ab2e2b9385c14e5f967f873340ed11}
+\hypertarget{classParser_a4bcf7560a5ea1b486bbe4bb54a5a22eb}{\index{Parser@{Parser}!prev\-Token@{prev\-Token}}
+\index{prev\-Token@{prev\-Token}!Parser@{Parser}}
+\subsubsection[{prev\-Token}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ext\-Token}$\ast$ Parser\-::prev\-Token}}\label{classParser_a4bcf7560a5ea1b486bbe4bb54a5a22eb}
+\hypertarget{classParser_ab2ef99ea9e732f5fd176b3949a6c32af}{\index{Parser@{Parser}!s@{s}}
+\index{s@{s}!Parser@{Parser}}
+\subsubsection[{s}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Scanner}$\ast$ Parser\-::s}}\label{classParser_ab2ef99ea9e732f5fd176b3949a6c32af}
+\hypertarget{classParser_a0910de176dcc1cdfbf7ad99622ce9dd5}{\index{Parser@{Parser}!stokens@{stokens}}
+\index{stokens@{stokens}!Parser@{Parser}}
+\subsubsection[{stokens}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Token}$\ast$ Parser\-::stokens}}\label{classParser_a0910de176dcc1cdfbf7ad99622ce9dd5}
+\hypertarget{classParser_a3606ff327be18af7f76df95f50851633}{\index{Parser@{Parser}!tokens@{tokens}}
+\index{tokens@{tokens}!Parser@{Parser}}
+\subsubsection[{tokens}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ext\-Token}$\ast$ Parser\-::tokens}}\label{classParser_a3606ff327be18af7f76df95f50851633}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{parser_8h}{parser.\-h}\item 
+\hyperlink{parser_8cpp}{parser.\-cpp}\end{DoxyCompactItemize}

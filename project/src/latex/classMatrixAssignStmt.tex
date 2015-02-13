@@ -1,0 +1,96 @@
+\hypertarget{classMatrixAssignStmt}{\section{Matrix\-Assign\-Stmt Class Reference}
+\label{classMatrixAssignStmt}\index{Matrix\-Assign\-Stmt@{Matrix\-Assign\-Stmt}}
+}
+
+
+Represents a matrix assignment. \par
+  
+
+
+
+
+{\ttfamily \#include $<$A\-S\-T.\-h$>$}
+
+
+
+Inheritance diagram for Matrix\-Assign\-Stmt\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classMatrixAssignStmt__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Matrix\-Assign\-Stmt\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classMatrixAssignStmt__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classMatrixAssignStmt_aa68d9d5e2febd0e7378fa8ce9433276e}{Matrix\-Assign\-Stmt} (\hyperlink{classVarName}{Var\-Name} $\ast$v, \hyperlink{classExpr}{Expr} $\ast$e1, \hyperlink{classExpr}{Expr} $\ast$e2, \hyperlink{classExpr}{Expr} $\ast$e3)
+\item 
+std\-::string \hyperlink{classMatrixAssignStmt_a7eb7f14cd0efb9a8fbe6a463a5f5a7cf}{unparse} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the code modeled by this class and all its variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a matrix assignment. \par
+ 
+
+Model\-: var\-Name '\mbox{[}' \hyperlink{classExpr}{Expr} ',' \hyperlink{classExpr}{Expr} '\mbox{]}' '=' \hyperlink{classExpr}{Expr} ';' \par
+ Example\-: matrix\mbox{[}0,0\mbox{]} = 8; 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classMatrixAssignStmt_aa68d9d5e2febd0e7378fa8ce9433276e}{\index{Matrix\-Assign\-Stmt@{Matrix\-Assign\-Stmt}!Matrix\-Assign\-Stmt@{Matrix\-Assign\-Stmt}}
+\index{Matrix\-Assign\-Stmt@{Matrix\-Assign\-Stmt}!MatrixAssignStmt@{Matrix\-Assign\-Stmt}}
+\subsubsection[{Matrix\-Assign\-Stmt}]{\setlength{\rightskip}{0pt plus 5cm}Matrix\-Assign\-Stmt\-::\-Matrix\-Assign\-Stmt (
+\begin{DoxyParamCaption}
+\item[{{\bf Var\-Name} $\ast$}]{v, }
+\item[{{\bf Expr} $\ast$}]{e1, }
+\item[{{\bf Expr} $\ast$}]{e2, }
+\item[{{\bf Expr} $\ast$}]{e3}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classMatrixAssignStmt_aa68d9d5e2febd0e7378fa8ce9433276e}
+Public constructor. 
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ Name of matrix being assigned \\
+\hline
+{\em e1} & -\/ Expression of the value of the row to be assigned \\
+\hline
+{\em e2} & -\/ Expression of the value to the col to be assigned \\
+\hline
+{\em e3} & -\/ Expression of the value to be assigned \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classMatrixAssignStmt_a7eb7f14cd0efb9a8fbe6a463a5f5a7cf}{\index{Matrix\-Assign\-Stmt@{Matrix\-Assign\-Stmt}!unparse@{unparse}}
+\index{unparse@{unparse}!MatrixAssignStmt@{Matrix\-Assign\-Stmt}}
+\subsubsection[{unparse}]{\setlength{\rightskip}{0pt plus 5cm}string Matrix\-Assign\-Stmt\-::unparse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classMatrixAssignStmt_a7eb7f14cd0efb9a8fbe6a463a5f5a7cf}
+
+
+Returns a string representation of the code modeled by this class and all its variables. 
+
+\begin{DoxyReturn}{Returns}
+std\-::string. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classNode_a60ea533e0900961c05e701db70097136}{Node}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{AST_8h}{A\-S\-T.\-h}\item 
+\hyperlink{AST_8cpp}{A\-S\-T.\-cpp}\end{DoxyCompactItemize}

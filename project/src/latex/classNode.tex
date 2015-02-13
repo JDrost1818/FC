@@ -1,0 +1,79 @@
+\hypertarget{classNode}{\section{Node Class Reference}
+\label{classNode}\index{Node@{Node}}
+}
+
+
+Abstract parent or grandparent for all classes in the Abstract Syntax Tree (A\-S\-T)  
+
+
+
+
+{\ttfamily \#include $<$A\-S\-T.\-h$>$}
+
+
+
+Inheritance diagram for Node\-:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classNode__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Node\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{classNode__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual std\-::string \hyperlink{classNode_a60ea533e0900961c05e701db70097136}{unparse} ()=0
+\item 
+virtual std\-::string \hyperlink{classNode_ab9dc8a0791d329231bc8427a7d7e9c2f}{cpp\-Code} ()
+\item 
+virtual \hyperlink{classNode_af5e3fa79300bf5f3f2f3ecae6e795a94}{$\sim$\-Node} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Abstract parent or grandparent for all classes in the Abstract Syntax Tree (A\-S\-T) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classNode_af5e3fa79300bf5f3f2f3ecae6e795a94}{\index{Node@{Node}!$\sim$\-Node@{$\sim$\-Node}}
+\index{$\sim$\-Node@{$\sim$\-Node}!Node@{Node}}
+\subsubsection[{$\sim$\-Node}]{\setlength{\rightskip}{0pt plus 5cm}virtual Node\-::$\sim$\-Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classNode_af5e3fa79300bf5f3f2f3ecae6e795a94}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classNode_ab9dc8a0791d329231bc8427a7d7e9c2f}{\index{Node@{Node}!cpp\-Code@{cpp\-Code}}
+\index{cpp\-Code@{cpp\-Code}!Node@{Node}}
+\subsubsection[{cpp\-Code}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\-::string Node\-::cpp\-Code (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classNode_ab9dc8a0791d329231bc8427a7d7e9c2f}
+\hypertarget{classNode_a60ea533e0900961c05e701db70097136}{\index{Node@{Node}!unparse@{unparse}}
+\index{unparse@{unparse}!Node@{Node}}
+\subsubsection[{unparse}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\-::string Node\-::unparse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classNode_a60ea533e0900961c05e701db70097136}
+
+
+Implemented in \hyperlink{classNotExpr_aa1632e9a8abf6aa1bf110afed379066b}{Not\-Expr}, \hyperlink{classIfExpr_a4b4c34fffb9539bac51cf5eb35e30081}{If\-Expr}, \hyperlink{classLetExpr_a518a538c87aeec36204d8a465be32913}{Let\-Expr}, \hyperlink{classParensExpr_ad8eabc69cf42ce3ee92d88caeb40134a}{Parens\-Expr}, \hyperlink{classFunctionCall_aa80e938636e993ed9956e11a51858b95}{Function\-Call}, \hyperlink{classMatrixRefExpr_ae1026da77ca12726f14e2f61656a22d8}{Matrix\-Ref\-Expr}, \hyperlink{classBinOpExpr_a1ec35159c20a6b8481ee89ae5829c14d}{Bin\-Op\-Expr}, \hyperlink{classAnyConst_a2c4a9d1499b29bde8e72650cae459716}{Any\-Const}, \hyperlink{classVarName_aabc6d52ebde3abe413bd9a2d75a50f3c}{Var\-Name}, \hyperlink{classWhileStmt_a1fd1b12f4d16d898b9dcc647417057fa}{While\-Stmt}, \hyperlink{classForStmt_a9cf08250042ae5a0a54d2196b584e28e}{For\-Stmt}, \hyperlink{classPrintStmt_a7f80dc4ce628e16d32cb6f06a417a748}{Print\-Stmt}, \hyperlink{classMatrixAssignStmt_a7eb7f14cd0efb9a8fbe6a463a5f5a7cf}{Matrix\-Assign\-Stmt}, \hyperlink{classStandardAssignStmt_aa4bef62d90b49a7ed4c5120cb656ba0e}{Standard\-Assign\-Stmt}, \hyperlink{classIfElseStmt_a2e8c850644f33e4ba918c53d0212e59f}{If\-Else\-Stmt}, \hyperlink{classIfStmt_abc1ada72841299826de65fbdf5dc36a0}{If\-Stmt}, \hyperlink{classStmtBlock_add948dedcbf091739307aa977f0a027e}{Stmt\-Block}, \hyperlink{classMatrixDecl_a060b7cc8af5fd4cb10e045321b39d397}{Matrix\-Decl}, \hyperlink{classMatrixAdvDecl_afa5f531b97e350e9a8c434bf5bdf1a0d}{Matrix\-Adv\-Decl}, \hyperlink{classStandardDecl_a3ee30dee2f990e66c795a1fb77fe0117}{Standard\-Decl}, \hyperlink{classStmtStmts_ae1cfeb7d7f0c155c6be7b42614954a23}{Stmt\-Stmts}, \hyperlink{classEmptyStmts_a0f5a1640891e7c70f8ac38d6df031f0e}{Empty\-Stmts}, and \hyperlink{classRoot_a887fe7392c99899892838a032925525c}{Root}.
+
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{AST_8h}{A\-S\-T.\-h}\end{DoxyCompactItemize}

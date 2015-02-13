@@ -1,0 +1,90 @@
+\hypertarget{classIfStmt}{\section{If\-Stmt Class Reference}
+\label{classIfStmt}\index{If\-Stmt@{If\-Stmt}}
+}
+
+
+Represents an if statement. \par
+  
+
+
+
+
+{\ttfamily \#include $<$A\-S\-T.\-h$>$}
+
+
+
+Inheritance diagram for If\-Stmt\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{classIfStmt__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for If\-Stmt\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=150pt]{classIfStmt__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classIfStmt_a917206365fb4307ede6751d2d00e0a58}{If\-Stmt} (\hyperlink{classExpr}{Expr} $\ast$e, \hyperlink{classStmt}{Stmt} $\ast$s)
+\item 
+std\-::string \hyperlink{classIfStmt_abc1ada72841299826de65fbdf5dc36a0}{unparse} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the code modeled by this class and all its variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents an if statement. \par
+ 
+
+Model\-: \hyperlink{classStmt}{Stmt} \-:\-:= 'if' '(' \hyperlink{classExpr}{Expr} ')' \hyperlink{classStmt}{Stmt} \par
+ Example\-: if (True) \{ x += 1; \} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classIfStmt_a917206365fb4307ede6751d2d00e0a58}{\index{If\-Stmt@{If\-Stmt}!If\-Stmt@{If\-Stmt}}
+\index{If\-Stmt@{If\-Stmt}!IfStmt@{If\-Stmt}}
+\subsubsection[{If\-Stmt}]{\setlength{\rightskip}{0pt plus 5cm}If\-Stmt\-::\-If\-Stmt (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr} $\ast$}]{e, }
+\item[{{\bf Stmt} $\ast$}]{s}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classIfStmt_a917206365fb4307ede6751d2d00e0a58}
+Public constructor. 
+\begin{DoxyParams}{Parameters}
+{\em e} & -\/ Boolean expression that is evaluated by if \\
+\hline
+{\em s} & -\/ Statement to be executed if true \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classIfStmt_abc1ada72841299826de65fbdf5dc36a0}{\index{If\-Stmt@{If\-Stmt}!unparse@{unparse}}
+\index{unparse@{unparse}!IfStmt@{If\-Stmt}}
+\subsubsection[{unparse}]{\setlength{\rightskip}{0pt plus 5cm}string If\-Stmt\-::unparse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classIfStmt_abc1ada72841299826de65fbdf5dc36a0}
+
+
+Returns a string representation of the code modeled by this class and all its variables. 
+
+\begin{DoxyReturn}{Returns}
+std\-::string. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classNode_a60ea533e0900961c05e701db70097136}{Node}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{AST_8h}{A\-S\-T.\-h}\item 
+\hyperlink{AST_8cpp}{A\-S\-T.\-cpp}\end{DoxyCompactItemize}

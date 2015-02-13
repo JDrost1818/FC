@@ -1,0 +1,147 @@
+\hypertarget{classExtToken}{\section{Ext\-Token Class Reference}
+\label{classExtToken}\index{Ext\-Token@{Ext\-Token}}
+}
+
+
+{\ttfamily \#include $<$ext\-Token.\-h$>$}
+
+
+
+Inheritance diagram for Ext\-Token\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classExtToken__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ext\-Token\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classExtToken__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classExtToken_a45a27528f391faf5679b7b30563ce846}{Ext\-Token} (\hyperlink{classParser}{Parser} $\ast$p, \hyperlink{classToken}{Token} $\ast$t)
+\item 
+\hyperlink{classExtToken_afa8972152abec42cd52b6f6f70a9a179}{Ext\-Token} (\hyperlink{classParser}{Parser} $\ast$p, \hyperlink{classToken}{Token} $\ast$t, std\-::string d)
+\item 
+virtual \hyperlink{classExtToken_a20af764e16aad213816429272d96a918}{$\sim$\-Ext\-Token} ()
+\item 
+virtual \hyperlink{classParseResult}{Parse\-Result} \hyperlink{classExtToken_a5c21a5ffe91f212085259126652ab77c}{nud} ()
+\item 
+virtual \hyperlink{classParseResult}{Parse\-Result} \hyperlink{classExtToken_afb2c9b0040e198d1d8aa2e041c5a7211}{led} (\hyperlink{classParseResult}{Parse\-Result} left)
+\item 
+virtual int \hyperlink{classExtToken_a6c0d61faa058b71147dd54bacee1db94}{lbp} ()
+\item 
+virtual std\-::string \hyperlink{classExtToken_a4ab6e72ac23235650b1756f794172ebb}{description} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::string \hyperlink{classExtToken_a5af1643a542ef7ee8ca0f82706383ae3}{lexeme}
+\item 
+\hyperlink{scanner_8h_ab7f9b765cab7ed98e5a7f05690f6a061}{token\-Type} \hyperlink{classExtToken_abbdaef42b65403cdc0247839ef95c875}{terminal}
+\item 
+\hyperlink{classExtToken}{Ext\-Token} $\ast$ \hyperlink{classExtToken_aa02995a897183b2a6ef758e541534e46}{next}
+\item 
+\hyperlink{classParser}{Parser} $\ast$ \hyperlink{classExtToken_af70d22156d5f8e855a8b0d92a82706ba}{parser}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classExtToken_a45a27528f391faf5679b7b30563ce846}{\index{Ext\-Token@{Ext\-Token}!Ext\-Token@{Ext\-Token}}
+\index{Ext\-Token@{Ext\-Token}!ExtToken@{Ext\-Token}}
+\subsubsection[{Ext\-Token}]{\setlength{\rightskip}{0pt plus 5cm}Ext\-Token\-::\-Ext\-Token (
+\begin{DoxyParamCaption}
+\item[{{\bf Parser} $\ast$}]{p, }
+\item[{{\bf Token} $\ast$}]{t}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classExtToken_a45a27528f391faf5679b7b30563ce846}
+\hypertarget{classExtToken_afa8972152abec42cd52b6f6f70a9a179}{\index{Ext\-Token@{Ext\-Token}!Ext\-Token@{Ext\-Token}}
+\index{Ext\-Token@{Ext\-Token}!ExtToken@{Ext\-Token}}
+\subsubsection[{Ext\-Token}]{\setlength{\rightskip}{0pt plus 5cm}Ext\-Token\-::\-Ext\-Token (
+\begin{DoxyParamCaption}
+\item[{{\bf Parser} $\ast$}]{p, }
+\item[{{\bf Token} $\ast$}]{t, }
+\item[{std\-::string}]{d}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classExtToken_afa8972152abec42cd52b6f6f70a9a179}
+\hypertarget{classExtToken_a20af764e16aad213816429272d96a918}{\index{Ext\-Token@{Ext\-Token}!$\sim$\-Ext\-Token@{$\sim$\-Ext\-Token}}
+\index{$\sim$\-Ext\-Token@{$\sim$\-Ext\-Token}!ExtToken@{Ext\-Token}}
+\subsubsection[{$\sim$\-Ext\-Token}]{\setlength{\rightskip}{0pt plus 5cm}virtual Ext\-Token\-::$\sim$\-Ext\-Token (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classExtToken_a20af764e16aad213816429272d96a918}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classExtToken_a4ab6e72ac23235650b1756f794172ebb}{\index{Ext\-Token@{Ext\-Token}!description@{description}}
+\index{description@{description}!ExtToken@{Ext\-Token}}
+\subsubsection[{description}]{\setlength{\rightskip}{0pt plus 5cm}virtual std\-::string Ext\-Token\-::description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classExtToken_a4ab6e72ac23235650b1756f794172ebb}
+
+
+Reimplemented in \hyperlink{classEndOfFileToken_a918312b101ca8cc7fb5ba4e56bc12b58}{End\-Of\-File\-Token}, \hyperlink{classForwardSlashToken_ac27b1ab175ec08c468bd0d4c41636a5c}{Forward\-Slash\-Token}, \hyperlink{classDashToken_a02d79abb30dcab20081edb8e969885d2}{Dash\-Token}, \hyperlink{classStarToken_a59b81cb08057d75eca4b9a8aad8e2be1}{Star\-Token}, \hyperlink{classPlusSignToken_a61a05ac9660848e13da97d5746808868}{Plus\-Sign\-Token}, \hyperlink{classLeftParenToken_a2df35684bd2081c3bdfe2357946917bc}{Left\-Paren\-Token}, \hyperlink{classLetToken_a2c5ba0489774bf6468a26f4e19d7fab4}{Let\-Token}, \hyperlink{classIfToken_aad226162c5649920c13c2a9e9e7a3617}{If\-Token}, \hyperlink{classVariableNameToken_a54bc3a78736e5c967dc4b1c58e66135b}{Variable\-Name\-Token}, \hyperlink{classCharConstToken_addf2603d51bc2be908137f06737d8b30}{Char\-Const\-Token}, \hyperlink{classStringConstToken_a6343169471a6cb6e422496f2f640691f}{String\-Const\-Token}, \hyperlink{classFloatConstToken_a529b6d3ad479b0f6b940a82ba48b98c0}{Float\-Const\-Token}, \hyperlink{classIntConstToken_a98191508d849878d40800e447a0f1892}{Int\-Const\-Token}, \hyperlink{classFalseKwdToken_a8351fad7090214687138e113b5a581f1}{False\-Kwd\-Token}, \hyperlink{classTrueKwdToken_af4dbe740f06e6928a436d06349af67a9}{True\-Kwd\-Token}, and \hyperlink{classNotOpToken_a136a11f1e42542a9a58b7c14249c9d23}{Not\-Op\-Token}.
+
+\hypertarget{classExtToken_a6c0d61faa058b71147dd54bacee1db94}{\index{Ext\-Token@{Ext\-Token}!lbp@{lbp}}
+\index{lbp@{lbp}!ExtToken@{Ext\-Token}}
+\subsubsection[{lbp}]{\setlength{\rightskip}{0pt plus 5cm}virtual int Ext\-Token\-::lbp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classExtToken_a6c0d61faa058b71147dd54bacee1db94}
+
+
+Reimplemented in \hyperlink{classRelationalOpToken_ada096491d9553aea21089230489d6aef}{Relational\-Op\-Token}, \hyperlink{classForwardSlashToken_ad65829044355922a291dfbfd3052b183}{Forward\-Slash\-Token}, \hyperlink{classDashToken_a1cf877584a85c06e884a182744e92b39}{Dash\-Token}, \hyperlink{classStarToken_a87682a46d434781795d060e43e7eae23}{Star\-Token}, \hyperlink{classPlusSignToken_a80753eec970928e042da350df83150f2}{Plus\-Sign\-Token}, \hyperlink{classLeftParenToken_afa1b94645278f097bb097d3b24445d14}{Left\-Paren\-Token}, \hyperlink{classLetToken_a2a5ab5bc5897340513480c162bb2b065}{Let\-Token}, and \hyperlink{classIfToken_abfd39ff4c4818d382bf0b97fd097c478}{If\-Token}.
+
+\hypertarget{classExtToken_afb2c9b0040e198d1d8aa2e041c5a7211}{\index{Ext\-Token@{Ext\-Token}!led@{led}}
+\index{led@{led}!ExtToken@{Ext\-Token}}
+\subsubsection[{led}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Parse\-Result} Ext\-Token\-::led (
+\begin{DoxyParamCaption}
+\item[{{\bf Parse\-Result}}]{left}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classExtToken_afb2c9b0040e198d1d8aa2e041c5a7211}
+
+
+Reimplemented in \hyperlink{classRelationalOpToken_a426c64391e7b3272d8e6277964730e05}{Relational\-Op\-Token}, \hyperlink{classForwardSlashToken_ac2dda7b791ab555e4323f17baaf323e1}{Forward\-Slash\-Token}, \hyperlink{classDashToken_a703ca6afcd05ac4688c66b82e177bdbc}{Dash\-Token}, \hyperlink{classStarToken_aba82bdc81500a58096bfeedad600ad10}{Star\-Token}, and \hyperlink{classPlusSignToken_a4d79a17891f92800259308ce71402526}{Plus\-Sign\-Token}.
+
+\hypertarget{classExtToken_a5c21a5ffe91f212085259126652ab77c}{\index{Ext\-Token@{Ext\-Token}!nud@{nud}}
+\index{nud@{nud}!ExtToken@{Ext\-Token}}
+\subsubsection[{nud}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf Parse\-Result} Ext\-Token\-::nud (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classExtToken_a5c21a5ffe91f212085259126652ab77c}
+
+
+Reimplemented in \hyperlink{classLeftParenToken_a3cb3ae9ab2647e5534c85529d314f08b}{Left\-Paren\-Token}, \hyperlink{classLetToken_a14df948cdf775bde8392bf58d53b91f3}{Let\-Token}, \hyperlink{classIfToken_add06bd79ce755fd5503f78e507109e52}{If\-Token}, \hyperlink{classVariableNameToken_a6e775ad5b8c2eafd2e2a185ab90b1f27}{Variable\-Name\-Token}, \hyperlink{classCharConstToken_a33032d6b35ef2b6ebc4db770b374ad5b}{Char\-Const\-Token}, \hyperlink{classStringConstToken_a4767bba84d30289ab31d501f240b80fb}{String\-Const\-Token}, \hyperlink{classFloatConstToken_a991e92ae34d0b01a3b1dd08ed01b8e6e}{Float\-Const\-Token}, \hyperlink{classIntConstToken_ae1f720d6006c47e145cae7879d09c708}{Int\-Const\-Token}, \hyperlink{classFalseKwdToken_adc06b0433535d552c1e7f8076d756fb3}{False\-Kwd\-Token}, \hyperlink{classTrueKwdToken_ad86f05acb9483438db153eab44aa6dac}{True\-Kwd\-Token}, and \hyperlink{classNotOpToken_a55a0dd53742aaca04338c16be079b031}{Not\-Op\-Token}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classExtToken_a5af1643a542ef7ee8ca0f82706383ae3}{\index{Ext\-Token@{Ext\-Token}!lexeme@{lexeme}}
+\index{lexeme@{lexeme}!ExtToken@{Ext\-Token}}
+\subsubsection[{lexeme}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string Ext\-Token\-::lexeme}}\label{classExtToken_a5af1643a542ef7ee8ca0f82706383ae3}
+\hypertarget{classExtToken_aa02995a897183b2a6ef758e541534e46}{\index{Ext\-Token@{Ext\-Token}!next@{next}}
+\index{next@{next}!ExtToken@{Ext\-Token}}
+\subsubsection[{next}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Ext\-Token}$\ast$ Ext\-Token\-::next}}\label{classExtToken_aa02995a897183b2a6ef758e541534e46}
+\hypertarget{classExtToken_af70d22156d5f8e855a8b0d92a82706ba}{\index{Ext\-Token@{Ext\-Token}!parser@{parser}}
+\index{parser@{parser}!ExtToken@{Ext\-Token}}
+\subsubsection[{parser}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Parser}$\ast$ Ext\-Token\-::parser}}\label{classExtToken_af70d22156d5f8e855a8b0d92a82706ba}
+\hypertarget{classExtToken_abbdaef42b65403cdc0247839ef95c875}{\index{Ext\-Token@{Ext\-Token}!terminal@{terminal}}
+\index{terminal@{terminal}!ExtToken@{Ext\-Token}}
+\subsubsection[{terminal}]{\setlength{\rightskip}{0pt plus 5cm}{\bf token\-Type} Ext\-Token\-::terminal}}\label{classExtToken_abbdaef42b65403cdc0247839ef95c875}
+
+
+The documentation for this class was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{extToken_8h}{ext\-Token.\-h}\end{DoxyCompactItemize}

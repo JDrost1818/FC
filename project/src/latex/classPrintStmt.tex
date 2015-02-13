@@ -1,0 +1,87 @@
+\hypertarget{classPrintStmt}{\section{Print\-Stmt Class Reference}
+\label{classPrintStmt}\index{Print\-Stmt@{Print\-Stmt}}
+}
+
+
+Represents a print statement. \par
+  
+
+
+
+
+{\ttfamily \#include $<$A\-S\-T.\-h$>$}
+
+
+
+Inheritance diagram for Print\-Stmt\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classPrintStmt__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Print\-Stmt\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=152pt]{classPrintStmt__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classPrintStmt_a58af5b7c49ef63dfa35950ac253f81ca}{Print\-Stmt} (\hyperlink{classExpr}{Expr} $\ast$e)
+\item 
+std\-::string \hyperlink{classPrintStmt_a7f80dc4ce628e16d32cb6f06a417a748}{unparse} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the code modeled by this class and all its variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a print statement. \par
+ 
+
+Model\-: \hyperlink{classStmt}{Stmt} \-:\-:= 'print' '(' \hyperlink{classExpr}{Expr} ')' ';' \par
+ Example\-: print(\char`\"{}\-Hello World\char`\"{}); 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classPrintStmt_a58af5b7c49ef63dfa35950ac253f81ca}{\index{Print\-Stmt@{Print\-Stmt}!Print\-Stmt@{Print\-Stmt}}
+\index{Print\-Stmt@{Print\-Stmt}!PrintStmt@{Print\-Stmt}}
+\subsubsection[{Print\-Stmt}]{\setlength{\rightskip}{0pt plus 5cm}Print\-Stmt\-::\-Print\-Stmt (
+\begin{DoxyParamCaption}
+\item[{{\bf Expr} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classPrintStmt_a58af5b7c49ef63dfa35950ac253f81ca}
+Public constructor. 
+\begin{DoxyParams}{Parameters}
+{\em e} & -\/ Expression of what is to be printed \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classPrintStmt_a7f80dc4ce628e16d32cb6f06a417a748}{\index{Print\-Stmt@{Print\-Stmt}!unparse@{unparse}}
+\index{unparse@{unparse}!PrintStmt@{Print\-Stmt}}
+\subsubsection[{unparse}]{\setlength{\rightskip}{0pt plus 5cm}string Print\-Stmt\-::unparse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classPrintStmt_a7f80dc4ce628e16d32cb6f06a417a748}
+
+
+Returns a string representation of the code modeled by this class and all its variables. 
+
+\begin{DoxyReturn}{Returns}
+std\-::string. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classNode_a60ea533e0900961c05e701db70097136}{Node}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{AST_8h}{A\-S\-T.\-h}\item 
+\hyperlink{AST_8cpp}{A\-S\-T.\-cpp}\end{DoxyCompactItemize}

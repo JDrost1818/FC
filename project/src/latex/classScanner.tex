@@ -1,0 +1,81 @@
+\hypertarget{classScanner}{\section{Scanner Class Reference}
+\label{classScanner}\index{Scanner@{Scanner}}
+}
+
+
+{\ttfamily \#include $<$scanner.\-h$>$}
+
+
+
+Collaboration diagram for Scanner\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{classScanner__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classScanner_acc995a4b67a10d2652ce00afed14f497}{Scanner} ()
+\item 
+\hyperlink{classToken}{Token} $\ast$ \hyperlink{classScanner_a40f021dac0075b146272e42d425b2ba5}{scan} (const char $\ast$text)
+\item 
+\hyperlink{classToken}{Token} $\ast$ \hyperlink{classScanner_ae085962cf00bc5eb5cc34ff591c7acd2}{match\-Next\-Token} (const char $\ast$text)
+\item 
+int \hyperlink{classScanner_a04bdb5e946b78e8f71d24c7866cbc850}{consume\-White\-Space\-And\-Comments} (regex\-\_\-t $\ast$white\-Space, regex\-\_\-t $\ast$block\-Comment, regex\-\_\-t $\ast$line\-Comment, const char $\ast$text)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+regex\-\_\-t $\ast$ \hyperlink{classScanner_ae191d1d2c5a19bac9e921703fb3a49e5}{regexes} \mbox{[}\hyperlink{scanner_8h_a0b165111126f48bfc565f4a66b4ce940a6f865e67a0d986c1adb1da33aa735028}{lexical\-Error}+1\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classScanner_acc995a4b67a10d2652ce00afed14f497}{\index{Scanner@{Scanner}!Scanner@{Scanner}}
+\index{Scanner@{Scanner}!Scanner@{Scanner}}
+\subsubsection[{Scanner}]{\setlength{\rightskip}{0pt plus 5cm}Scanner\-::\-Scanner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classScanner_acc995a4b67a10d2652ce00afed14f497}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classScanner_a04bdb5e946b78e8f71d24c7866cbc850}{\index{Scanner@{Scanner}!consume\-White\-Space\-And\-Comments@{consume\-White\-Space\-And\-Comments}}
+\index{consume\-White\-Space\-And\-Comments@{consume\-White\-Space\-And\-Comments}!Scanner@{Scanner}}
+\subsubsection[{consume\-White\-Space\-And\-Comments}]{\setlength{\rightskip}{0pt plus 5cm}int Scanner\-::consume\-White\-Space\-And\-Comments (
+\begin{DoxyParamCaption}
+\item[{regex\-\_\-t $\ast$}]{white\-Space, }
+\item[{regex\-\_\-t $\ast$}]{block\-Comment, }
+\item[{regex\-\_\-t $\ast$}]{line\-Comment, }
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)}}\label{classScanner_a04bdb5e946b78e8f71d24c7866cbc850}
+\hypertarget{classScanner_ae085962cf00bc5eb5cc34ff591c7acd2}{\index{Scanner@{Scanner}!match\-Next\-Token@{match\-Next\-Token}}
+\index{match\-Next\-Token@{match\-Next\-Token}!Scanner@{Scanner}}
+\subsubsection[{match\-Next\-Token}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Token} $\ast$ Scanner\-::match\-Next\-Token (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)}}\label{classScanner_ae085962cf00bc5eb5cc34ff591c7acd2}
+\hypertarget{classScanner_a40f021dac0075b146272e42d425b2ba5}{\index{Scanner@{Scanner}!scan@{scan}}
+\index{scan@{scan}!Scanner@{Scanner}}
+\subsubsection[{scan}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Token} $\ast$ Scanner\-::scan (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{text}
+\end{DoxyParamCaption}
+)}}\label{classScanner_a40f021dac0075b146272e42d425b2ba5}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classScanner_ae191d1d2c5a19bac9e921703fb3a49e5}{\index{Scanner@{Scanner}!regexes@{regexes}}
+\index{regexes@{regexes}!Scanner@{Scanner}}
+\subsubsection[{regexes}]{\setlength{\rightskip}{0pt plus 5cm}regex\-\_\-t$\ast$ Scanner\-::regexes\mbox{[}{\bf lexical\-Error}+1\mbox{]}}}\label{classScanner_ae191d1d2c5a19bac9e921703fb3a49e5}
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{scanner_8h}{scanner.\-h}\item 
+\hyperlink{scanner_8cpp}{scanner.\-cpp}\end{DoxyCompactItemize}

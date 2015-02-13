@@ -1,0 +1,90 @@
+\hypertarget{classStandardAssignStmt}{\section{Standard\-Assign\-Stmt Class Reference}
+\label{classStandardAssignStmt}\index{Standard\-Assign\-Stmt@{Standard\-Assign\-Stmt}}
+}
+
+
+Represents a standard variable assignment. \par
+  
+
+
+
+
+{\ttfamily \#include $<$A\-S\-T.\-h$>$}
+
+
+
+Inheritance diagram for Standard\-Assign\-Stmt\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classStandardAssignStmt__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Standard\-Assign\-Stmt\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classStandardAssignStmt__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classStandardAssignStmt_aa0d2dac7f07be33118c436f526f9fb1d}{Standard\-Assign\-Stmt} (\hyperlink{classVarName}{Var\-Name} $\ast$v, \hyperlink{classExpr}{Expr} $\ast$e)
+\item 
+std\-::string \hyperlink{classStandardAssignStmt_aa4bef62d90b49a7ed4c5120cb656ba0e}{unparse} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the code modeled by this class and all its variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a standard variable assignment. \par
+ 
+
+Model\-: \hyperlink{classStmt}{Stmt} \-:\-:= var\-Name '=' \hyperlink{classExpr}{Expr} ';' \par
+ Example\-: x = 1; 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classStandardAssignStmt_aa0d2dac7f07be33118c436f526f9fb1d}{\index{Standard\-Assign\-Stmt@{Standard\-Assign\-Stmt}!Standard\-Assign\-Stmt@{Standard\-Assign\-Stmt}}
+\index{Standard\-Assign\-Stmt@{Standard\-Assign\-Stmt}!StandardAssignStmt@{Standard\-Assign\-Stmt}}
+\subsubsection[{Standard\-Assign\-Stmt}]{\setlength{\rightskip}{0pt plus 5cm}Standard\-Assign\-Stmt\-::\-Standard\-Assign\-Stmt (
+\begin{DoxyParamCaption}
+\item[{{\bf Var\-Name} $\ast$}]{v, }
+\item[{{\bf Expr} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classStandardAssignStmt_aa0d2dac7f07be33118c436f526f9fb1d}
+Public constructor. 
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ Name of variable being assigned \\
+\hline
+{\em e} & -\/ Expression of the value to be assigned \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classStandardAssignStmt_aa4bef62d90b49a7ed4c5120cb656ba0e}{\index{Standard\-Assign\-Stmt@{Standard\-Assign\-Stmt}!unparse@{unparse}}
+\index{unparse@{unparse}!StandardAssignStmt@{Standard\-Assign\-Stmt}}
+\subsubsection[{unparse}]{\setlength{\rightskip}{0pt plus 5cm}string Standard\-Assign\-Stmt\-::unparse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classStandardAssignStmt_aa4bef62d90b49a7ed4c5120cb656ba0e}
+
+
+Returns a string representation of the code modeled by this class and all its variables. 
+
+\begin{DoxyReturn}{Returns}
+std\-::string. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classNode_a60ea533e0900961c05e701db70097136}{Node}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{AST_8h}{A\-S\-T.\-h}\item 
+\hyperlink{AST_8cpp}{A\-S\-T.\-cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,90 @@
+\hypertarget{classFunctionCall}{\section{Function\-Call Class Reference}
+\label{classFunctionCall}\index{Function\-Call@{Function\-Call}}
+}
+
+
+Represents a function call. \par
+  
+
+
+
+
+{\ttfamily \#include $<$A\-S\-T.\-h$>$}
+
+
+
+Inheritance diagram for Function\-Call\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classFunctionCall__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Function\-Call\-:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=166pt]{classFunctionCall__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classFunctionCall_ac233a4d5357e0eeb59ff8a0b9d075d28}{Function\-Call} (\hyperlink{classVarName}{Var\-Name} $\ast$v, \hyperlink{classExpr}{Expr} $\ast$e)
+\item 
+std\-::string \hyperlink{classFunctionCall_aa80e938636e993ed9956e11a51858b95}{unparse} ()
+\begin{DoxyCompactList}\small\item\em Returns a string representation of the code modeled by this class and all its variables. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Represents a function call. \par
+ 
+
+Model\-: \hyperlink{classExpr}{Expr} \-:\-:= var\-Name '(' \hyperlink{classExpr}{Expr} ')' \par
+ Example\-: main(1) 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classFunctionCall_ac233a4d5357e0eeb59ff8a0b9d075d28}{\index{Function\-Call@{Function\-Call}!Function\-Call@{Function\-Call}}
+\index{Function\-Call@{Function\-Call}!FunctionCall@{Function\-Call}}
+\subsubsection[{Function\-Call}]{\setlength{\rightskip}{0pt plus 5cm}Function\-Call\-::\-Function\-Call (
+\begin{DoxyParamCaption}
+\item[{{\bf Var\-Name} $\ast$}]{v, }
+\item[{{\bf Expr} $\ast$}]{e}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classFunctionCall_ac233a4d5357e0eeb59ff8a0b9d075d28}
+Public constructor. 
+\begin{DoxyParams}{Parameters}
+{\em v} & -\/ Name of function being called \\
+\hline
+{\em e} & -\/ Expression of arguments \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classFunctionCall_aa80e938636e993ed9956e11a51858b95}{\index{Function\-Call@{Function\-Call}!unparse@{unparse}}
+\index{unparse@{unparse}!FunctionCall@{Function\-Call}}
+\subsubsection[{unparse}]{\setlength{\rightskip}{0pt plus 5cm}string Function\-Call\-::unparse (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classFunctionCall_aa80e938636e993ed9956e11a51858b95}
+
+
+Returns a string representation of the code modeled by this class and all its variables. 
+
+\begin{DoxyReturn}{Returns}
+std\-::string. 
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classNode_a60ea533e0900961c05e701db70097136}{Node}.
+
+
+
+The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{AST_8h}{A\-S\-T.\-h}\item 
+\hyperlink{AST_8cpp}{A\-S\-T.\-cpp}\end{DoxyCompactItemize}
